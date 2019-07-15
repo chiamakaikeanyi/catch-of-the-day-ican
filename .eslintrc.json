@@ -1,0 +1,105 @@
+{
+    "env": {
+        "browser": true,
+        "mocha": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:react/recommended"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "camelcase": [
+            0,
+            {
+                "properties": "always"
+            }
+        ],
+        "semi": 2,
+        "eqeqeq": 2,
+        "no-use-before-define": [
+            2,
+            {
+                "functions": false
+            }
+        ],
+        "max-len": [
+            2,
+            {
+                "code": 120,
+                "ignoreComments": true
+            }
+        ],
+        "quotes": [
+            2,
+            "double"
+        ],
+        "strict": [
+            0,
+            "global"
+        ],
+        "no-undef": 2,
+        "no-unused-vars": 2,
+        "no-eq-null": 2,
+        "space-before-function-paren": [
+            2,
+            {
+                "anonymous": "ignore",
+                "named": "never"
+            }
+        ],
+        "new-cap": "off",
+        "prefer-const": "error",
+        "valid-jsdoc": 1,
+        "no-multi-spaces": [
+            "error"
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxBOF": 1
+            }
+        ],
+        "no-param-reassign": "warn",
+        "no-useless-constructor": "error",
+        "react/jsx-first-prop-new-line": "error",
+        "react/jsx-closing-bracket-location": "error",
+        "react/jsx-sort-props": [
+            "error",
+            {
+                "ignoreCase": true
+            }
+        ],
+        "react/jsx-max-props-per-line": [
+            1,
+            {
+                "maximum": 1,
+                "when": "always"
+            }
+        ],
+        "react/self-closing-comp": "error",
+        "react/no-unused-state": "error",
+        "react/jsx-equals-spacing": [
+            "error",
+            "never"
+        ],
+        "react/jsx-tag-spacing": [
+            "error",
+            {
+                "afterOpening": "never",
+                "closingSlash": "never",
+                "beforeClosing": "never",
+                "beforeSelfClosing": "always"
+            }
+        ]
+    }
+}
