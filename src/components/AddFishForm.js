@@ -3,13 +3,6 @@ import PropTypes from "prop-types";
 
 class AddFishForm extends Component {
     static propTypes = {
-        fish: PropTypes.shape({
-            image: PropTypes.string,
-            name: PropTypes.string,
-            price: PropTypes.number,
-            description: PropTypes.string,
-            status: PropTypes.string,
-        }).isRequired,
         addFish: PropTypes.func.isRequired,
     }
 
